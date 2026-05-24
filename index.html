@@ -70,21 +70,21 @@
   </nav>
 
   <!-- ============ HERO ============ -->
-  <header class="pt-40 pb-16 px-6">
+  <header class="pt-28 sm:pt-40 pb-12 sm:pb-16 px-6">
    <div class="max-w-3xl mx-auto text-center fade-up">
     <p class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-accent bg-accent/10 px-4 py-1.5 rounded-full mb-8">
      <i data-lucide="map-pin" style="width:14px;height:14px"></i> Tromsøs egen 3D-visningstjeneste
     </p>
-    <h1 data-template-id="hero-heading" class="canva-text text-charcoal leading-[1.1] text-4xl sm:text-6xl font-bold">
+    <h1 data-template-id="hero-heading" class="canva-text text-charcoal leading-[1.1] text-3xl sm:text-5xl md:text-6xl font-bold">
      Én time skanning.<br>
      <span class="font-serif-display italic font-normal text-accent">Visninger for alltid.</span>
     </h1>
     <p data-template-id="hero-subheading" class="canva-text mt-7 text-warm/80 leading-relaxed max-w-2xl mx-auto text-lg">
      Utenlandske Airbnb-gjester og tilflyttende studenter velger boliger de kan gå rundt i på nett. Vi gir Tromsø-eiere den fordelen – ferdig levert på 24 timer.
     </p>
-    <div class="flex flex-wrap gap-4 justify-center mt-10">
-     <a href="#prising" data-template-id="hero-secondary-cta" class="canva-button inline-block px-8 py-4 rounded-full font-semibold bg-white border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors">Se priser</a>
-     <a href="#kontakt" data-template-id="hero-cta" class="canva-button inline-block px-8 py-4 rounded-full font-semibold bg-accent text-white hover:bg-accentHover transition-colors shadow-lg shadow-accent/20">Bestill 3D-skanning</a>
+    <div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-center mt-10">
+     <a href="#prising" data-template-id="hero-secondary-cta" class="canva-button w-full sm:w-auto inline-block px-8 py-4 rounded-full font-semibold bg-white border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors">Se priser</a>
+     <a href="#kontakt" data-template-id="hero-cta" class="canva-button w-full sm:w-auto inline-block px-8 py-4 rounded-full font-semibold bg-accent text-white hover:bg-accentHover transition-colors shadow-lg shadow-accent/20">Bestill 3D-skanning</a>
     </div>
    </div>
   </header>
@@ -149,21 +149,29 @@
    </div>
   </section>
 
-  <!-- ============ INTERAKTIV DEMO (flyttet ned, etter tillit er bygget) ============ -->
-  <section class="px-6 py-20 bg-charcoal">
+  <!-- ============ INTERAKTIV DEMO (med touch-fix mot skrolle-felle) ============ -->
+  <section class="px-6 py-16 sm:py-20 bg-charcoal">
    <div class="max-w-4xl mx-auto text-center mb-8">
     <h2 class="text-2xl sm:text-3xl font-bold text-cream mb-3">Prøv selv: Gå rundt i boligen</h2>
     <p class="text-cream/60 text-sm max-w-xl mx-auto">Dette er nøyaktig opplevelsen gjestene og kjøperne dine får – døgnet rundt, fra hvor som helst i verden.</p>
    </div>
    <div class="max-w-4xl mx-auto relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-charcoal/50">
-    <iframe src="https://my.matterport.com/show?play=1&amp;lang=nb&amp;m=5MmNFazKgsz&amp;qs=1" class="w-full h-full border-0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+    <div id="matterport-overlay" onclick="this.style.display='none'; document.getElementById('matterport-frame').style.pointerEvents='auto';"
+         class="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 cursor-pointer bg-charcoal/40 transition-opacity">
+     <span class="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
+      <i data-lucide="move" class="text-charcoal" style="width:28px;height:28px"></i>
+     </span>
+     <span class="bg-white/95 px-5 py-2.5 rounded-full text-sm font-semibold text-charcoal shadow-lg">Trykk for å utforske i 3D</span>
+    </div>
+    <iframe id="matterport-frame" src="https://my.matterport.com/show?play=1&amp;lang=nb&amp;m=5MmNFazKgsz&amp;qs=1" class="w-full h-full border-0" style="pointer-events:none;" allowfullscreen allow="xr-spatial-tracking"></iframe>
    </div>
+   <p class="max-w-4xl mx-auto text-center text-cream/40 text-xs mt-4 sm:hidden">Trykk på modellen for å bevege deg rundt – skroll utenfor for å fortsette nedover.</p>
   </section>
 
   <!-- ============ VERDIKORT ============ -->
-  <section data-template-id="value-section" class="canva-section px-6 py-24">
+  <section data-template-id="value-section" class="canva-section px-6 py-16 sm:py-24">
    <div class="max-w-6xl mx-auto">
-    <h2 class="text-center text-3xl font-bold text-charcoal mb-4">Bygget for to typer eiere</h2>
+    <h2 class="text-center text-2xl sm:text-3xl font-bold text-charcoal mb-4">Bygget for to typer eiere</h2>
     <p class="text-center text-warm/60 mb-16 max-w-2xl mx-auto">Enten du leier ut på Airbnb eller skal selge en bolig – en 3D-modell løser det samme problemet: usikkerheten hos den som ser annonsen.</p>
     <div class="grid md:grid-cols-2 gap-8">
      <div data-template-id="value-card-1" class="canva-card bg-white rounded-2xl p-8 shadow-sm border border-charcoal/5">
@@ -211,9 +219,9 @@
   </section>
 
   <!-- ============ PROSESS MED SUB-PUNKTER ============ -->
-  <section class="px-6 py-24 bg-white/50 border-t border-b border-charcoal/5">
+  <section class="px-6 py-16 sm:py-24 bg-white/50 border-t border-b border-charcoal/5">
    <div class="max-w-6xl mx-auto">
-    <h2 data-template-id="how-heading" class="canva-text text-center text-3xl font-bold text-charcoal mb-4">Enkel prosess fra A til Å</h2>
+    <h2 data-template-id="how-heading" class="canva-text text-center text-2xl sm:text-3xl font-bold text-charcoal mb-4">Enkel prosess fra A til Å</h2>
     <p class="text-center text-warm/60 mb-16">Fra bestilling til ferdig digital visning på under 24 timer.</p>
     <div class="grid md:grid-cols-3 gap-10">
      <div class="text-center">
@@ -248,9 +256,9 @@
   </section>
 
   <!-- ============ SAMMENLIGNINGSTABELL ============ -->
-  <section class="px-6 py-24">
+  <section class="px-6 py-16 sm:py-24">
    <div class="max-w-4xl mx-auto">
-    <h2 class="text-center text-3xl font-bold text-charcoal mb-4">Hvorfor velge digital 3D-visning?</h2>
+    <h2 class="text-center text-2xl sm:text-3xl font-bold text-charcoal mb-4">Hvorfor velge digital 3D-visning?</h2>
     <p class="text-center text-warm/60 mb-12">Se forskjellen mellom den gamle måten og en alltid-åpen digital tvilling.</p>
     <div class="grid md:grid-cols-2 gap-8">
      <div class="bg-white/40 p-8 rounded-2xl border border-charcoal/5">
@@ -276,9 +284,9 @@
   </section>
 
   <!-- ============ PRISING ============ -->
-  <section id="prising" data-template-id="pricing-section" class="canva-section px-6 py-24 bg-white/50 border-t border-b border-charcoal/5">
+  <section id="prising" data-template-id="pricing-section" class="canva-section px-6 py-16 sm:py-24 bg-white/50 border-t border-b border-charcoal/5">
    <div class="max-w-6xl mx-auto">
-    <h2 data-template-id="pricing-heading" class="canva-text text-center text-3xl font-bold text-charcoal mb-4">Transparente priser, ingen skjulte tillegg</h2>
+    <h2 data-template-id="pricing-heading" class="canva-text text-center text-2xl sm:text-3xl font-bold text-charcoal mb-4">Transparente priser, ingen skjulte tillegg</h2>
     <p class="text-center text-warm/60 mb-16">Alt inkludert: skanning, hosting og publiseringsklar lenke.</p>
     <div class="grid md:grid-cols-3 gap-8 items-stretch">
      <div data-template-id="price-card-1" class="canva-card bg-white rounded-2xl p-8 shadow-sm flex flex-col border border-charcoal/5">
@@ -306,22 +314,22 @@
   </section>
 
   <!-- ============ KONTAKTSKJEMA ============ -->
-  <section id="kontakt" class="px-6 py-28">
+  <section id="kontakt" class="px-6 py-20 sm:py-28">
    <div class="max-w-lg mx-auto text-center">
-    <h2 data-template-id="contact-heading" class="canva-text text-3xl font-bold text-charcoal mb-4">Uforpliktende forespørsel</h2>
+    <h2 data-template-id="contact-heading" class="canva-text text-2xl sm:text-3xl font-bold text-charcoal mb-4">Uforpliktende forespørsel</h2>
     <p class="text-warm/70 mb-8">Legg igjen kontaktinformasjon, så sjekker vi ledig tid og svarer deg i løpet av kort tid.</p>
     <form id="contact-form" class="space-y-4 text-left">
      <div>
       <label data-template-id="form-label-name" for="name" class="canva-text block text-sm font-medium text-warm mb-1.5">Navn / firma</label>
-      <input id="name" type="text" required class="w-full px-4 py-3 rounded-xl border border-charcoal/10 focus:outline-none focus:ring-2 focus:ring-accent/50 bg-white">
+      <input id="name" type="text" required class="w-full px-4 py-3.5 rounded-xl border border-charcoal/10 focus:outline-none focus:ring-2 focus:ring-accent/50 bg-white">
      </div>
      <div>
       <label data-template-id="form-label-contact" for="contact" class="canva-text block text-sm font-medium text-warm mb-1.5">E-post eller telefonnummer</label>
-      <input id="contact" type="text" required class="w-full px-4 py-3 rounded-xl border border-charcoal/10 focus:outline-none focus:ring-2 focus:ring-accent/50 bg-white">
+      <input id="contact" type="text" required class="w-full px-4 py-3.5 rounded-xl border border-charcoal/10 focus:outline-none focus:ring-2 focus:ring-accent/50 bg-white">
      </div>
      <div>
       <label data-template-id="form-label-address" for="address" class="canva-text block text-sm font-medium text-warm mb-1.5">Eiendommens adresse (valgfritt)</label>
-      <input id="address" type="text" class="w-full px-4 py-3 rounded-xl border border-charcoal/10 focus:outline-none focus:ring-2 focus:ring-accent/50 bg-white">
+      <input id="address" type="text" class="w-full px-4 py-3.5 rounded-xl border border-charcoal/10 focus:outline-none focus:ring-2 focus:ring-accent/50 bg-white">
      </div>
      <button data-template-id="form-cta" type="submit" class="canva-button w-full py-4 rounded-full font-semibold bg-accent text-white hover:bg-accentHover transition-colors mt-2 shadow-md">Sjekk ledig tid</button>
      <p class="text-xs text-center text-warm/50 mt-1 flex items-center justify-center gap-1.5">
