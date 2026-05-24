@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="nb">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Visning Tromsø | Virtuelle Omvisninger</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <style>
+        body { font-family: 'DM Sans', sans-serif; background-color: #FAF8F5; }
+        html { scroll-behavior: smooth; }
+    </style>
+  <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FAF8F5',
+                        charcoal: '#2C2926',
+                        warm: '#4A3F35',
+                        accent: '#C8956C',
+                        accentHover: '#B07D56'
+                    }
+                }
+            }
+        }
+    </script>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
+ </head>
+ <body data-template-id="__page-root" class="min-h-screen">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-charcoal/5">
+   <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <span data-template-id="nav-logo" class="canva-text text-xl font-bold text-charcoal">Tromsø 3D</span> 
+    <a href="#kontakt" data-template-id="nav-cta" class="canva-button hidden sm:inline-block px-5 py-2.5 rounded-full text-sm font-medium bg-charcoal text-cream hover:bg-warm transition-colors">Bestill visning</a>
+   </div>
+  </nav>
+
+  <header class="pt-32 pb-16 px-6">
+   <div class="max-w-3xl mx-auto text-center">
+    <h1 data-template-id="hero-heading" class="canva-text text-charcoal leading-tight text-4xl sm:text-5xl font-bold">Digitale 3D-visninger i Tromsø – Raskt, lokalt og rimelig.</h1>
+    <p data-template-id="hero-subheading" class="canva-text mt-6 text-warm/80 leading-relaxed max-w-2xl mx-auto text-lg">Vi skaper fotorealistiske, interaktive 3D-omvisninger for Airbnb, utleieboliger og eiendomssalg. Garantert levering innen 24 timer – helt uten reisekostnader.</p>
+    <div class="flex flex-wrap gap-4 justify-center mt-10">
+     <a href="#prising" data-template-id="hero-secondary-cta" class="canva-button inline-block px-8 py-4 rounded-full font-semibold bg-white border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors">Se priser</a>
+     <a href="#kontakt" data-template-id="hero-cta" class="canva-button inline-block px-8 py-4 rounded-full font-semibold bg-accent text-white hover:bg-accentHover transition-colors shadow-lg shadow-accent/20">Bestill 3D-skanning</a>
+    </div>
+   </div>
+  </header>
+
+  <section class="px-6 pb-24">
+   <div class="max-w-4xl mx-auto relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-charcoal/5">
+    <iframe src="https://my.matterport.com/show?play=1&lang=en-US&m=5MmNFazKgsz&qs=1" class="w-full h-full border-0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+   </div>
+  </section>
+
+  <section data-template-id="value-section" class="canva-section px-6 py-12 bg-white/50">
+   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+    <div data-template-id="value-card-1" class="canva-card bg-white rounded-2xl p-8 shadow-sm border border-charcoal/5">
+     <h3 data-template-id="value-card-1-title" class="canva-text text-xl font-bold text-charcoal mb-6">For Airbnb & Korttidsutleie</h3>
+     <ul class="space-y-4">
+      <li class="flex gap-3"><i data-lucide="check-circle" class="text-accent flex-shrink-0 mt-0.5" style="width:20px;height:20px"></i><span data-template-id="v1-bullet-1" class="canva-text text-warm/80"><strong>Høyere bookingrate:</strong> Utenlandske gjester velger trygghet. En 3D-modell dokumenterer planløsning og standard presist.</span></li>
+      <li class="flex gap-3"><i data-lucide="check-circle" class="text-accent flex-shrink-0 mt-0.5" style="width:20px;height:20px"></i><span data-template-id="v1-bullet-2" class="canva-text text-warm/80"><strong>Færre spørsmål i innboksen:</strong> Gjester ser umiddelbart hvor senger, bad og fasiliteter er plassert.</span></li>
+      <li class="flex gap-3"><i data-lucide="check-circle" class="text-accent flex-shrink-0 mt-0.5" style="width:20px;height:20px"></i><span data-template-id="v1-bullet-3" class="canva-text text-warm/80"><strong>Unngå dårlige anmeldelser:</strong> Forventningsavklaringen blir 100% presis. Ingen ubehagelige overraskelser ved innsjekk.</span></li>
+     </ul>
+    </div>
+    <div data-template-id="value-card-2" class="canva-card bg-white rounded-2xl p-8 shadow-sm border border-charcoal/5">
+     <h3 data-template-id="value-card-2-title" class="canva-text text-xl font-bold text-charcoal mb-6">For Eiendomsmeglere & Boligsalg</h3>
+     <ul class="space-y-4">
+      <li class="flex gap-3"><i data-lucide="check-circle" class="text-accent flex-shrink-0 mt-0.5" style="width:20px;height:20px"></i><span data-template-id="v2-bullet-1" class="canva-text text-warm/80"><strong>Åpent 24/7 for tilflyttere:</strong> Perfekt for studenter, helsepersonell og andre som flytter to Tromsø uten mulighet for fysisk visning.</span></li>
+      <li class="flex gap-3"><i data-lucide="check-circle" class="text-accent flex-shrink-0 mt-0.5" style="width:20px;height:20px"></i><span data-template-id="v2-bullet-2" class="canva-text text-warm/80"><strong>Garantert &lt;24t levering:</strong> Tid er penger i eiendomsmarkedet. Modellen er klar til publisering dagen etter skanning.</span></li>
+      <li class="flex gap-3"><i data-lucide="check-circle" class="text-accent flex-shrink-0 mt-0.5" style="width:20px;height:20px"></i><span data-template-id="v2-bullet-3" class="canva-text text-warm/80"><strong>0 kr i reisekostnader:</strong> Vi er basert lokalt i Tromsø. Du slipper å dekke høye reiseutgifter for nasjonale byråer.</span></li>
+     </ul>
+    </div>
+   </div>
+  </section>
+
+  <section class="px-6 py-24">
+   <div class="max-w-6xl mx-auto">
+    <h2 data-template-id="how-heading" class="canva-text text-center text-3xl font-bold text-charcoal mb-16">Enkel prosess fra A til Å</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+     <div class="text-center">
+      <span class="text-5xl font-bold text-accent/30">01</span>
+      <h4 data-template-id="step-1-title" class="canva-text font-semibold text-lg text-charcoal mt-4 mb-2">Enkel bestilling</h4>
+      <p data-template-id="step-1-desc" class="canva-text text-warm/70">Du velger et tidspunkt som passer. Boligen klargjøres og ryddes på samme måte som før en tradisjonell foto- eller boligvisning.</p>
+     </div>
+     <div class="text-center">
+      <span class="text-5xl font-bold text-accent/30">02</span>
+      <h4 data-template-id="step-2-title" class="canva-text font-semibold text-lg text-charcoal mt-4 mb-2">Effektiv skanning</h4>
+      <p data-template-id="step-2-desc" class="canva-text text-warm/70">Vi kommer på avtalt befaring. Selve den digitale skanningen tar vanligvis kun mellom 30 til 60 minutter for en normal leilighet.</p>
+     </div>
+     <div class="text-center">
+      <span class="text-5xl font-bold text-accent/30">03</span>
+      <h4 data-template-id="step-3-title" class="canva-text font-semibold text-lg text-charcoal mt-4 mb-2">Klar til bruk</h4>
+      <p data-template-id="step-3-desc" class="canva-text text-warm/70">Under 24 timer etter oppdraget mottar du en ferdig, optimalisert lenke. Denne kan limes rett inn på Airbnb, Finn.no eller nettsider.</p>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section id="prising" data-template-id="pricing-section" class="canva-section px-6 py-24 bg-white/50 border-t border-b border-charcoal/5">
+   <div class="max-w-6xl mx-auto">
+    <h2 data-template-id="pricing-heading" class="canva-text text-center text-3xl font-bold text-charcoal mb-16">Transparente priser, ingen skjulte tillegg</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+     <div data-template-id="price-card-1" class="canva-card bg-white rounded-2xl p-8 shadow-sm flex flex-col border border-charcoal/5">
+      <h4 data-template-id="price-1-title" class="canva-text text-xl font-semibold text-charcoal">Airbnb & Utleie</h4>
+      <p data-template-id="price-1-price" class="canva-text text-3xl font-bold text-charcoal mt-4">Fra 2 000 kr</p>
+      <p data-template-id="price-1-desc" class="canva-text text-warm/70 mt-4 flex-1">Inkluderer komplett digital 3D-skanning, tilpassede infopunkter (hotspots) for fasiliteter, samt 12 måneders sikker skyhosting inkludert i prisen.</p>
+     </div>
+     <div data-template-id="price-card-2" class="canva-card bg-white rounded-2xl p-8 shadow-sm flex flex-col relative border-2 border-accent">
+      <span data-template-id="price-2-badge" class="canva-tag absolute -top-3 left-6 bg-accent text-white text-xs font-semibold px-3 py-1 rounded-full">Lanseringspris</span>
+      <h4 data-template-id="price-2-title" class="canva-text text-xl font-semibold text-charcoal mt-2">Boligsalg (&le;80 m&sup2;)</h4>
+      <p data-template-id="price-2-price" class="canva-text text-3xl font-bold text-charcoal mt-4">2 990 kr</p>
+      <p data-template-id="price-2-desc" class="canva-text text-warm/70 mt-4 flex-1">Komplett Matterport 3D-modell optimalisert og klar for sømløs integrasjon på Finn.no, samt integrert plantegning. (Ordinær pris: 3 990 kr).</p>
+     </div>
+     <div data-template-id="price-card-3" class="canva-card bg-white rounded-2xl p-8 shadow-sm flex flex-col relative border-2 border-accent">
+      <span data-template-id="price-3-badge" class="canva-tag absolute -top-3 left-6 bg-accent text-white text-xs font-semibold px-3 py-1 rounded-full">Populær</span>
+      <h4 data-template-id="price-3-title" class="canva-text text-xl font-semibold text-charcoal mt-2">Boligsalg (80-150 m&sup2;)</h4>
+      <p data-template-id="price-3-price" class="canva-text text-3xl font-bold text-charcoal mt-4">3 990 kr</p>
+      <p data-template-id="price-3-desc" class="canva-text text-warm/70 mt-4 flex-1">Fullskala skanning for større leiligheter og eneboliger. Leveres klar til publisering med plantegning inkludert. (Ordinær pris: 4 990 kr).</p>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section id="kontakt" class="px-6 py-24">
+   <div class="max-w-lg mx-auto text-center">
+    <h2 data-template-id="contact-heading" class="canva-text text-3xl font-bold text-charcoal mb-4">Uforpliktende forespørsel</h2>
+    <p class="text-warm/70 mb-8">Legg igjen kontaktinformasjon, så sjekker vi ledig tid og svarer deg i løpet av kort tid.</p>
+    <form id="contact-form" class="space-y-4 text-left">
+     <div>
+      <label data-template-id="form-label-name" for="name" class="canva-text block text-sm font-medium text-warm mb-1">Navn / Firma</label> 
+      <input id="name" type="text" required class="w-full px-4 py-3 rounded-lg border border-charcoal/10 focus:outline-none focus:ring-2 focus:ring-accent/50 bg-white">
+     </div>
+     <div>
+      <label data-template-id="form-label-contact" for="contact" class="canva-text block text-sm font-medium text-warm mb-1">E-post eller telefonnummer</label> 
+      <input id="contact" type="text" required class="w-full px-4 py-3 rounded-lg border border-charcoal/10 focus:outline-none focus:ring-2 focus:ring-accent/50 bg-white">
+     </div>
+     <div>
+      <label data-template-id="form-label-address" for="address" class="canva-text block text-sm font-medium text-warm mb-1">Eiendommens adresse (valgfritt)</label> 
+      <input id="address" type="text" class="w-full px-4 py-3 rounded-lg border border-charcoal/10 focus:outline-none focus:ring-2 focus:ring-accent/50 bg-white">
+     </div>
+     <button data-template-id="form-cta" type="submit" class="canva-button w-full py-4 rounded-full font-semibold bg-accent text-white hover:bg-accentHover transition-colors mt-4 shadow-md">Sjekk ledig tid</button>
+    </form>
+    <p id="form-success" class="hidden mt-6 text-accent text-lg font-medium">Takk! Vi har mottatt din forespørsel og kontakter deg snart.</p>
+   </div>
+  </section>
+
+  <footer data-template-id="footer-section" class="canva-footer px-6 py-10 bg-charcoal text-cream/60 border-t border-t-charcoal/10">
+   <div class="max-w-6xl mx-auto text-center">
+    <p data-template-id="footer-text" class="canva-text text-sm">&copy; 2026 Tromsø 3D. Lokalt forankret i Nordens Paris. Drevet av Matterport-teknologi.</p>
+   </div>
+  </footer>
+
+  <script src="/_sdk/editing_sdk.js"></script>
+  <script>
+        lucide.createIcons();
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.classList.add('hidden');
+            document.getElementById('form-success').classList.remove('hidden');
+        });
+    </script>
+ </body>
+</html>
