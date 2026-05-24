@@ -48,13 +48,44 @@
    </div>
   </header>
 
-  <section class="px-6 pb-24">
+  <section class="px-6 pb-12">
    <div class="max-w-4xl mx-auto relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-charcoal/5">
-    <iframe src="https://my.matterport.com/show?play=1&lang=en-US&m=5MmNFazKgsz&qs=1" class="w-full h-full border-0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+    <iframe src="https://my.matterport.com/show?play=1&amp;lang=en-US&amp;m=5MmNFazKgsz&amp;qs=1" class="w-full h-full border-0" allowfullscreen allow="xr-spatial-tracking"></iframe>
    </div>
   </section>
 
-  <section data-template-id="value-section" class="canva-section px-6 py-12 bg-white/50">
+  <section class="max-w-4xl mx-auto px-6 pb-16 text-center">
+   <p class="text-xs uppercase tracking-wider text-warm/50 font-semibold mb-6">Sømløst integrert med markedsledende plattformer</p>
+   <div class="flex flex-wrap items-center justify-center gap-12 opacity-40 grayscale hover:grayscale-0 transition-all duration-300">
+    <span class="text-xl font-bold text-charcoal tracking-tight">FINN.no</span>
+    <span class="text-xl font-bold text-charcoal tracking-tight">airbnb</span>
+    <span class="text-xl font-bold text-charcoal tracking-tight">Booking.com</span>
+   </div>
+  </section>
+
+  <section class="px-6 py-16 bg-white/60 border-t border-b border-charcoal/5">
+   <div class="max-w-5xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+     <div class="p-6">
+      <p class="text-5xl font-bold text-accent mb-2">74%</p>
+      <p class="text-sm font-semibold text-charcoal uppercase tracking-wider mb-1">Flere bookinger</p>
+      <p class="text-sm text-warm/70">Dokumentert effekt på Airbnb- og korttidsleieannonser med 3D-omvisning.</p>
+     </div>
+     <div class="p-6 border-y md:border-y-0 md:border-x border-charcoal/5">
+      <p class="text-5xl font-bold text-accent mb-2">31%</p>
+      <p class="text-sm font-semibold text-charcoal uppercase tracking-wider mb-1">Raskere boligsalg</p>
+      <p class="text-sm text-warm/70">Eiendomsannonser med integrert Matterport-skanning selges vesentlig raskere.</p>
+     </div>
+     <div class="p-6">
+      <p class="text-5xl font-bold text-accent mb-2">90%</p>
+      <p class="text-sm font-semibold text-charcoal uppercase tracking-wider mb-1">Færre spørsmål</p>
+      <p class="text-sm text-warm/70">Gjester og kjøpere avklarer planløsning og standard selv, direkte i nettleseren.</p>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section data-template-id="value-section" class="canva-section px-6 py-24">
    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
     <div data-template-id="value-card-1" class="canva-card bg-white rounded-2xl p-8 shadow-sm border border-charcoal/5">
      <h3 data-template-id="value-card-1-title" class="canva-text text-xl font-bold text-charcoal mb-6">For Airbnb & Korttidsutleie</h3>
@@ -67,7 +98,7 @@
     <div data-template-id="value-card-2" class="canva-card bg-white rounded-2xl p-8 shadow-sm border border-charcoal/5">
      <h3 data-template-id="value-card-2-title" class="canva-text text-xl font-bold text-charcoal mb-6">For Eiendomsmeglere & Boligsalg</h3>
      <ul class="space-y-4">
-      <li class="flex gap-3"><i data-lucide="check-circle" class="text-accent flex-shrink-0 mt-0.5" style="width:20px;height:20px"></i><span data-template-id="v2-bullet-1" class="canva-text text-warm/80"><strong>Åpent 24/7 for tilflyttere:</strong> Perfekt for studenter, helsepersonell og andre som flytter to Tromsø uten mulighet for fysisk visning.</span></li>
+      <li class="flex gap-3"><i data-lucide="check-circle" class="text-accent flex-shrink-0 mt-0.5" style="width:20px;height:20px"></i><span data-template-id="v2-bullet-1" class="canva-text text-warm/80"><strong>Åpent 24/7 for tilflyttere:</strong> Perfekt for studenter, helsepersonell og andre som flytter til Tromsø uten mulighet for fysisk visning.</span></li>
       <li class="flex gap-3"><i data-lucide="check-circle" class="text-accent flex-shrink-0 mt-0.5" style="width:20px;height:20px"></i><span data-template-id="v2-bullet-2" class="canva-text text-warm/80"><strong>Garantert &lt;24t levering:</strong> Tid er penger i eiendomsmarkedet. Modellen er klar til publisering dagen etter skanning.</span></li>
       <li class="flex gap-3"><i data-lucide="check-circle" class="text-accent flex-shrink-0 mt-0.5" style="width:20px;height:20px"></i><span data-template-id="v2-bullet-3" class="canva-text text-warm/80"><strong>0 kr i reisekostnader:</strong> Vi er basert lokalt i Tromsø. Du slipper å dekke høye reiseutgifter for nasjonale byråer.</span></li>
      </ul>
@@ -75,7 +106,18 @@
    </div>
   </section>
 
-  <section class="px-6 py-24">
+  <section class="px-6 pb-20">
+   <div class="max-w-2xl mx-auto bg-charcoal text-cream rounded-2xl p-8 text-center shadow-lg">
+    <h3 class="text-xl font-bold mb-2">Har du et spørsmål om en eiendom?</h3>
+    <p class="text-sm text-cream/70 mb-6">Tast inn telefonnummeret ditt, så ringer vi deg opp for en uforpliktende prat innen kort tid.</p>
+    <form onsubmit="event.preventDefault(); alert('Takk! Vi ringer deg straks.');" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+     <input type="tel" required placeholder="Ditt telefonnummer" class="flex-1 px-5 py-3 rounded-full text-charcoal text-sm focus:outline-none focus:ring-2 focus:ring-accent">
+     <button type="submit" class="bg-accent text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-accentHover transition-colors whitespace-nowrap">Ring meg gratis</button>
+    </form>
+   </div>
+  </section>
+
+  <section class="px-6 py-12">
    <div class="max-w-6xl mx-auto">
     <h2 data-template-id="how-heading" class="canva-text text-center text-3xl font-bold text-charcoal mb-16">Enkel prosess fra A til Å</h2>
     <div class="grid md:grid-cols-3 gap-10">
@@ -98,7 +140,33 @@
    </div>
   </section>
 
-  <section id="prising" data-template-id="pricing-section" class="canva-section px-6 py-24 bg-white/50 border-t border-b border-charcoal/5">
+  <section class="px-6 py-24 bg-white/40 border-t border-b border-charcoal/5">
+   <div class="max-w-4xl mx-auto">
+    <h2 class="text-center text-3xl font-bold text-charcoal mb-12">Hvorfor velge digital 3D-visning?</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+     <div class="bg-white/40 p-6 rounded-xl border border-charcoal/5">
+      <h4 class="font-bold text-warm text-lg mb-4 flex items-center gap-2 text-warm/60"><i data-lucide="x-circle" class="text-red-400"></i> Tradisjonelle visninger</h4>
+      <ul class="space-y-3 text-sm text-warm/70">
+       <li>• Begrenset til spesifikke dager og klokkeslett</li>
+       <li>• Ekskluderer tilflyttere og langveisfarende interessenter</li>
+       <li>• Kjøper må gjette seg til romfølelsen ut fra flate bilder</li>
+       <li>• Krever konstant vasking og rydding før hver visning</li>
+      </ul>
+     </div>
+     <div class="bg-white p-6 rounded-xl border-2 border-accent shadow-sm">
+      <h4 class="font-bold text-charcoal text-lg mb-4 flex items-center gap-2"><i data-lucide="check-circle" class="text-accent"></i> Tromsø 3D (Matterport)</h4>
+      <ul class="space-y-3 text-sm text-charcoal/90">
+       <li>• Åpent 24 timer i døgnet, 7 dager i uken</li>
+       <li>• Perfekt for studenter, helse- og pendlerpersonell</li>
+       <li>• 100% transparent og nøyaktig representasjon</li>
+       <li>• Skannes kun én gang – tilgjengelig for alltid</li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section id="prising" data-template-id="pricing-section" class="canva-section px-6 py-24">
    <div class="max-w-6xl mx-auto">
     <h2 data-template-id="pricing-heading" class="canva-text text-center text-3xl font-bold text-charcoal mb-16">Transparente priser, ingen skjulte tillegg</h2>
     <div class="grid md:grid-cols-3 gap-8">
